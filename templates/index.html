@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="This is a simple registration form for companies looking
+    on increasing productivity, and improving organization wellness. "
+    />
+    <title>Movie Recommendation Form</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/static/style.css') }}"> -->
+    <link rel="stylesheet" href="/static/index.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='index.css') }}">
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="Logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- <nav>
+      <ul class="navList">
+        <li class="listNav"><a href="../templates/index.html" target="__blank"> Home</a></li>
+        <li class="listNav"><a href="./about.html"> About us</a></li>
+      </ul>
+    </nav> -->
+    <h1>Welcome to Movie Recommendations</h1>
+    <p>Choose the type of recommendations:</p>
+
+    <div class="container">
+      <form action="/recommend_by_title" method="post">
+        <label for="title">Recommend by Title:</label>
+        <input type="text" id="title" name="movie_title" required />
+        <button type="submit">Get Recommendations</button>
+      </form>
+  
+      <form action="/recommend_by_genre" method="post">
+        <label for="genre">Recommend by Genre:</label>
+        <input type="text" id="genre" name="genre" required />
+        <button type="submit">Get Recommendations</button>
+      </form>
+    </div>
+
+    <footer>
+      &copy; 2024 Group 2 Project, All Rights Reserved.
+    </footer>
+  </body>
+</html>
+
+
+

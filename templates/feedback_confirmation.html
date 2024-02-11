@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Confirmation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback Confirmation</h1>
+        <p>Thank you for providing feedback for the movie '{{ movie_title }}'.</p>
+        <p>Your feedback: '{{ feedback }}'</p>
+        <p>We appreciate your input!</p>
+    </div>
+</body>
+</html>
